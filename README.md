@@ -1,4 +1,4 @@
-!\[Ink Duel: five opponents drawn in ink](banner.png)
+<img src="banner.png" alt="Ink Duel: five opponents drawn in ink" width="100%">
 
 # Ink Duel
 
