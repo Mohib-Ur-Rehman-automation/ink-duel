@@ -63,7 +63,18 @@ Designed and directed by Mohib Ur Rehman. The code was written by Claude (Anthro
 * Balance of duels II to V has had little play-testing.
 * The score is generated, not composed, and was mixed by measurement.
 
+## Official versions
+
+Ink Duel is only published by me, at:
+
+* https://mohib-ur-rehman-automation.github.io/ink-duel/
+* this repository
+
+If you find it anywhere else, it is an unofficial copy.
+
 ## Licence
 
-MIT. See `LICENSE`.
+© 2026 Mohib Ur Rehman. All rights reserved. You can play it and read the code, but you may not copy, re-upload, modify or sell it without my permission. See `LICENSE`.
+
+Versions published before 23 November 2026 were MIT-licensed.
 

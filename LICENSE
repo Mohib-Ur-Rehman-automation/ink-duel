@@ -1,21 +1,24 @@
-MIT License
+Ink Duel
+Copyright (c) 2026 Mohib Ur Rehman. All rights reserved.
 
-Copyright (c) 2026 Mohib Ur Rehman
+You may:
+  - play the game at its official addresses, listed below
+  - read the source code to learn from it
+  - link to the official addresses and share screenshots or short clips
+    with credit to "Ink Duel by Mohib Ur Rehman"
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+You may not, without written permission from Mohib Ur Rehman:
+  - copy, re-upload, mirror or embed the game on any other website,
+    game portal or app store
+  - modify the game or publish works based on it
+  - sell it, or use it to earn money in any way, including ads
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Official addresses:
+  https://mohib-ur-rehman-automation.github.io/ink-duel/
+  https://github.com/Mohib-Ur-Rehman-automation/ink-duel
+  and any page that Mohib Ur Rehman lists in the README of the repository above.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Versions of this repository published before 23 November 2026 were released
+under the MIT License. This licence applies to all versions from that date on.
+
+THE GAME IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.

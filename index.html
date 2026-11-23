@@ -1,9 +1,20 @@
 <!DOCTYPE html>
+<!--
+  Ink Duel
+  Copyright (c) 2026 Mohib Ur Rehman. All rights reserved.
+  Designed and directed by Mohib Ur Rehman.
+  Official versions: https://mohib-ur-rehman-automation.github.io/ink-duel/
+                     https://github.com/Mohib-Ur-Rehman-automation/ink-duel
+  You may play this game and read this code. You may not copy, re-upload,
+  modify or redistribute it without written permission. See LICENSE.
+-->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title>Ink Duel</title>
+<meta name="author" content="Mohib Ur Rehman">
+<meta name="copyright" content="© 2026 Mohib Ur Rehman. All rights reserved.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 <style>
@@ -102,9 +113,19 @@ body.fighting #bPause{display:block}
   #card .begin{grid-column:1}
   .verdict{font-size:26vw}
 }
+
+/* credit + unofficial-copy notice */
+#credit{position:fixed;top:16px;left:16px;z-index:3;font:400 11px/1 var(--display);letter-spacing:.16em;text-transform:uppercase;color:var(--mute);pointer-events:none;display:none}
+body.on-title #credit{display:block}
+#unofficial{position:fixed;left:0;right:0;bottom:0;z-index:6;display:none;padding:8px 14px;background:var(--ink);color:var(--paper);
+  font:400 12px/1.4 var(--display);letter-spacing:.12em;text-transform:uppercase;text-align:center}
+#unofficial a{color:var(--paper)}
+#unofficial.on{display:block}
 </style>
 </head>
-<body>
+<body class="on-title">
+<p id="credit">&copy; 2026 Mohib Ur Rehman</p>
+<p id="unofficial">Unofficial copy. Ink Duel is by Mohib Ur Rehman. <a href="https://mohib-ur-rehman-automation.github.io/ink-duel/" target="_blank" rel="noopener">Play the official version</a></p>
 <canvas id="c" aria-label="Ink Duel play area. Draw strokes to fight."></canvas>
 
 <div id="bar">
@@ -164,6 +185,14 @@ body.fighting #bPause{display:block}
 
 <script>
 (()=>{'use strict';
+
+/* ---------- official hosts ---------- */
+// Not a lock: an unknown host only shows a credit bar with a link to the official version.
+(function(){const h=location.hostname.toLowerCase();
+ const ok=['','localhost','127.0.0.1','mohib-ur-rehman-automation.github.io'];
+ const okEnd=['.itch.io','.itch.zone','.hwcdn.net','.crazygames.com','.crazygames.io','claude.ai','.claudeusercontent.com','.claude.ai'];
+ if(!(ok.includes(h)||okEnd.some(e=>h===e.replace(/^\./,'')||h.endsWith(e)))){const n=document.getElementById('unofficial');if(n)n.classList.add('on')}
+})();
 const $=s=>document.querySelector(s);
 const cv=$('#c'),ctx=cv.getContext('2d');
 const stain=document.createElement('canvas'),sctx=stain.getContext('2d');
@@ -419,7 +448,7 @@ function rayToEdge(x,y,a){
 }
 
 /* ---------- flow ---------- */
-function show(id){for(const s of document.querySelectorAll('.screen'))s.classList.toggle('on',s.id===id)}
+function show(id){for(const s of document.querySelectorAll('.screen'))s.classList.toggle('on',s.id===id);document.body.classList.toggle('on-title',id==='title')}
 function hint(text,ttl){const h=$('#hint');if(!text){h.classList.remove('on');hintTimer=0;return}h.textContent=text;h.classList.add('on');hintTimer=ttl||0}
 function setState(s){state=s;document.body.classList.toggle('fighting',s==='fight'||s==='paused')}
 // the player's name seal: one stroke comes back for each opponent cut down
