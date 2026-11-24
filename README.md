@@ -4,7 +4,7 @@
 
 A one-screen browser game where the stroke you draw is the attack. Five opponents, one brush, no install.
 
-**Play it:** https://mohib-ur-rehman-automation.github.io/ink-duel/
+**Play it:** https://mohiburrehman.itch.io/ink-duel or https://mohib-ur-rehman-automation.github.io/ink-duel/
 
 > They took your name, stroke by stroke. Cut it back.
 
@@ -43,7 +43,7 @@ Keys: `P` or `Esc` pause, `T` light/dark, `M` sound.
 
 ## What is in the file
 
-Everything is in `index.html`: about 600 lines of plain JavaScript on a 2D canvas, no libraries, no build step, no server.
+Everything is in `index.html`: about 950 lines of plain HTML and JavaScript on a 2D canvas, no libraries, no build step, no server.
 
 * **Ink:** brush strokes with speed-based width, flying droplets that dry into the page, a paper texture generated at load.
 * **Gestures:** each stroke is classified by length, straightness, speed and turning angle.
@@ -67,6 +67,7 @@ Designed and directed by Mohib Ur Rehman. The code was written by Claude (Anthro
 
 Ink Duel is only published by me, at:
 
+* https://mohiburrehman.itch.io/ink-duel
 * https://mohib-ur-rehman-automation.github.io/ink-duel/
 * this repository
 
